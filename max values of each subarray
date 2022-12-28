@@ -1,0 +1,11 @@
+n=list(map(int,input().split()))
+k=int(input())
+a=[]
+for i in range(0 ,(len(n)-(k-1))):
+    b=[]
+    for j in range(i,i+k):
+        b.append(n[j])
+    a.append(max(b))
+
+print(a)        
+    
